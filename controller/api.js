@@ -5,6 +5,7 @@ Cube.initSolver();
 const { redisClient, connectRedis } = require('../redis/redisClient');
 
 module.exports.Path = async (req, res) => {
+    console.log("Received request to /api/path with body:");
     try {
         let path = req.body.scramble;
         const key = encodeURIComponent(path);
