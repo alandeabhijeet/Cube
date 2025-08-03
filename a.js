@@ -1,7 +1,7 @@
 const Cube = require('./3X3/index');
 Cube.initSolver();
 let cube = new Cube();
-cube.move("U F B' L'");
+cube.move("R' L'");
 const solutio = cube.solve();
 console.log("Solution Moves:", solutio);
 const stateString = cube.asString();
